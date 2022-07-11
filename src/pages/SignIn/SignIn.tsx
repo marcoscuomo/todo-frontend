@@ -1,5 +1,6 @@
 import { useContext } from "react";
 import { SubmitHandler, useForm } from "react-hook-form";
+import Link from "next/link";
 
 import { AuthContext } from "../../contexts/AuthContext";
 
@@ -29,12 +30,11 @@ export default function SignIn() {
         />
         <footer>
           <button type="submit">Sign In</button>
-          <button>Sign Up</button>
+          <Link href="/signup">
+            <button>Sign Up</button>
+          </Link>
         </footer>
       </form>
     </main>
   );
-}
-function useContent(): {} {
-  throw new Error("Function not implemented.");
 }
