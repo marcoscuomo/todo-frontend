@@ -1,20 +1,20 @@
 .container {
-  background: var(--gray-400);
-  width: 44rem;
-  margin: 6rem auto;
-  border-radius: 0.4rem;
+  margin: 5rem auto;
+  width: 70%;
 }
 
-.container form {
+.container > form {
+  padding: 2rem 0;
+  background: var(--gray-400);
+  border-radius: 0.4rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 1rem;
-  padding: 6rem 0;
 }
 
-.container form input {
+.container > form input {
   padding: 0.9rem;
   width: 50%;
   border: 1px solid var(--black);
@@ -23,19 +23,7 @@
   color: var(--gray-300); 
 }
 
-.container form input::placeholder {
-  color: var(--gray-250);
-}
-
-.container footer {
-  width: 50%;
-  display: flex;
-  justify-content: center;
-  gap: 3rem;
-  margin-top: 1rem;
-}
-
-.container footer button {
+.container > form button {
   border: none;
   border-radius: 0.4rem;
   background: var(--blue-500);
@@ -45,7 +33,7 @@
   transition: all 0.5s ease;
 }
 
-.container footer button:hover {
+.container > form button:hover {
   cursor: pointer;
   background: var(--blue-450);
 }
